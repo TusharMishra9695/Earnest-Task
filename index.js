@@ -1,7 +1,11 @@
 const express = require("express");
 const app = express();
+var bodyParser = require("body-parser");
 const taskRouter = require("./routes/task");
 const port = 5000;
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
 app.use("/api/task", taskRouter);
 
 app.listen(port, () => {
