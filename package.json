@@ -1,0 +1,17 @@
+{
+  "name": "earnest_task_backend",
+  "version": "1.0.0",
+  "description": "This is a task management app to handle tasks",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "devStart": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3"
+  }
+}
